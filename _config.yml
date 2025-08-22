@@ -16,9 +16,7 @@
 title: Jiashun Pang
 email: xinguk2018@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Jiashun Pang’s homepage — showcasing my CV, academic research in AI and Applied Mathematics, engineering projects, personal reflections, and blog articles.
 twitter_username: username
 github_username: cocoJ-P
 minimal_mistakes_skin: default
@@ -58,19 +56,19 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name: "First Lastname"
+  name: "Jiashun Pang"
   avatar: "/assets/images/bioPhoto.jpg"
-  bio: "My awesome biography constrained to a sentence or two goes here."
+  bio: "I am a pre-PhD researcher aspiring to pursue doctoral studies in AI for Science and Machine Scientist. My research focuses on the intersection of Artificial Intelligence and Applied Mathematics, with particular interest in their applications to scientific and engineering problems."
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
-      url: "https://"
+      url: "https://cocoJ-P.github.io"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
+      url: "https://github.com/cocoJ-P"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/"
