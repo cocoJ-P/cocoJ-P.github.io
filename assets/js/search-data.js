@@ -72,7 +72,18 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-a-post-with-image-galleries",
+            },{id: "post-dynamic-systems-101-part-1-the-pendulum",
+        
+          title: "Dynamic Systems 101 Part 1 The Pendulum",
+        
+        description: "this is what included plotly.js code could look like",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/dynamicsystem/";
+          
+        },
+      },{id: "post-a-post-with-image-galleries",
         
           title: "a post with image galleries",
         
