@@ -244,4 +244,134 @@ $$
 
 ---
 
-要不要我帮你写一个 **Python 代码示例**（用 `solve_ivp` 解单摆的一阶系统），这样你能看到从理论公式到数值解的完整闭环？
+# 1. 单摆控制方程
+
+下面用**能量守恒**把单摆方程一步步推出来；这是最直接、最“由守恒律来”的推导。结论会是
+
+$$
+\boxed{\ \ddot\theta+\frac{g}{L}\sin\theta=0\ }
+$$
+
+**理想化假设**：细而不可伸长的轻绳/刚杆，摆球质量 $m$，摆长 $L$，铰接无摩擦，仅受重力，无空气阻力。
+
+---
+
+### Step 1：选取广义坐标与几何关系
+
+用偏离竖直向下的夹角 $\theta(t)$ 描述位置。摆球速度大小
+
+$$
+v = L\,\dot\theta .
+$$
+
+### Step 2：写动能 $T$
+
+$$
+T=\frac12 m v^2=\frac12 m L^2 \dot\theta^2 .
+$$
+
+### Step 3：写势能 $U$
+
+取最低点为零势能面。摆球升高的竖直高度
+
+$$
+h = L(1-\cos\theta)\quad\Rightarrow\quad
+U = m g h = m g L(1-\cos\theta).
+$$
+
+### Step 4：应用**机械能守恒**
+
+在理想单摆中，无非保守力做功，因此**总机械能守恒**：
+
+$$
+E \equiv T+U=\frac12 m L^2 \dot\theta^2 + m g L(1-\cos\theta)=\text{常数}.
+$$
+
+### Step 5：对上式对时间求导并置零
+
+$$
+\frac{dE}{dt}
+= m L^2 \dot\theta\,\ddot\theta + m g L \sin\theta\,\dot\theta = 0 .
+$$
+
+### Step 6：提取公共因子并化简为微分方程
+
+将 $\dot\theta$ 提出来（若某瞬间 $\dot\theta=0$，由连续性同样成立）：
+
+$$
+\dot\theta\Big( m L^2 \ddot\theta + m g L \sin\theta \Big)=0
+\;\;\Rightarrow\;\;
+m L^2 \ddot\theta + m g L \sin\theta = 0 .
+$$
+
+两边除以 $mL^2$：
+
+$$
+\boxed{\ \ddot\theta+\frac{g}{L}\sin\theta=0\ }.
+$$
+
+---
+
+## 补充与常见变体
+
+* **无量纲化**：令 $\tau = t\sqrt{g/L}$，则
+
+  $$
+  \theta''(\tau) + \sin\theta = 0,
+  $$
+
+  其中 $'$ 为对 $\tau$ 的导数。
+* **小角度线性化**：$\sin\theta \approx \theta$（$|\theta|\ll1$）得
+
+  $$
+  \ddot\theta+\frac{g}{L}\theta=0 \;\Rightarrow\; \theta(t)=A\cos\!\big(\sqrt{g/L}\,t+\phi\big).
+  $$
+* **第一积分（显式能量式）**：由 Step 4 也可得
+
+  $$
+  \frac12 L^2\dot\theta^2 + gL(1-\cos\theta)=\text{常数}
+  \;\Rightarrow\;
+  \dot\theta^2=\frac{2g}{L}\big(\cos\theta-\cos\theta_{\max}\big),
+  $$
+
+  便于分析最大摆角与速度关系。
+* **有阻尼/外力时不再能量守恒**：若有粘性阻尼矩 $c\dot\theta$ 或外驱动力矩 $M(t)$，则
+
+  $$
+  \ddot\theta+\frac{c}{mL^2}\dot\theta+\frac{g}{L}\sin\theta=\frac{M(t)}{mL^2},
+  $$
+
+  这时总机械能不守恒（其变化率等于外力/阻尼功率）。
+
+对的！拿到 **一阶系统的 Jacobian**
+
+$$
+J(\theta)=\begin{bmatrix}0&1\\-\cos\theta&0\end{bmatrix}
+$$
+
+之后，就可以把你离散数据里的每个 $\theta_i$ **直接代入**来算指标了。
+
+**保守单摆的闭式结果（超省事）：**
+
+* 行列式：$\det J_i=\cos\theta_i$
+* 奇异值：$\sigma_{\min,i}=|\cos\theta_i|$、$\sigma_{\max,i}=1$
+* 条件数：$\kappa_i=1/|\cos\theta_i|$
+
+**数值例子（弧度）：**
+
+* $\theta=0$: $\det=1$, $\sigma_{\min}=1$, $\kappa=1$（最稳）
+* $\theta=\pi/3\approx1.047$: $\cos\theta=0.5\Rightarrow \det=0.5$, $\sigma_{\min}=0.5$, $\kappa=2$
+* $\theta=\pi/2-0.01$: $\cos\theta\approx0.01\Rightarrow \sigma_{\min}\approx0.01$, $\kappa\approx100$（接近奇异）
+* $\theta=\pi/2$: $\cos\theta=0\Rightarrow \sigma_{\min}=0$, $\kappa=\infty$（奇异边界）
+
+**实操清单：**
+
+1. 确保 $\theta$ 用弧度（必要时 `unwrap`）。
+2. 对每个样本计算 $|\cos\theta_i|$；设阈值 $\tau$（如 0.05），做分区：
+
+   * 良态：$|\cos\theta_i|\ge\tau$
+   * 边界：$|\cos\theta_i|<\tau$
+3. 画时间序列或相图热力图（$|\cos\theta|$、$\kappa$）。
+4. 在良态区做你后续的显函数拟合；靠近 $\pi/2+k\pi$ 的样本谨慎/分片处理。
+
+> 若日后加入阻尼 $\zeta$：$J=\begin{bmatrix}0&1\\-\cos\theta&-2\zeta\end{bmatrix}$。这时用样本点数值算 SVD/特征值即可（$\det=\cos\theta$ 仍然是奇异判据）。
