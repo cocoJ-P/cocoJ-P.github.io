@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dynamic Systems 101: Part 1 — The Pendulum
+title: Dynamic Systems 101 Part 1 — The Pendulum
 date: 2025-08-28 15:10:00
 description: this is what included plotly.js code could look like
 tags: formatting charts
