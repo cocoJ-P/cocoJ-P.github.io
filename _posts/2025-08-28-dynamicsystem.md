@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dynamic Systems 101 Part 1 The Pendulum
-date: 2025-08-28 15:10:00
+date: 2025-08-28
 description: this is what included plotly.js code could look like
 tags: formatting charts
 categories: sample-posts
@@ -122,3 +122,126 @@ $$
 
 ---
 
+## 一阶系统化 (First-order System Transformation)
+
+### 1. 基本思路
+
+* 高阶 ODE 一般不方便直接数值求解。
+* 所以我们**引入新的状态变量**，把高阶导数逐级“降阶”，直到全部变成一阶。
+* 目标是把方程写成：
+
+  $$
+  \dot{\mathbf{x}} = f(\mathbf{x}, t)
+  $$
+
+  其中 $\mathbf{x}$ 是状态向量。
+
+---
+
+### 2. 单摆的例子
+
+原始方程（二阶）：
+
+$$
+\ddot{\theta}(t) + \frac{g}{L}\sin\theta(t) = 0
+$$
+
+**步骤：**
+
+1. 定义新的变量：
+
+   $$
+   x_1 = \theta \quad (\text{角度}), \quad x_2 = \dot{\theta} \quad (\text{角速度})
+   $$
+
+2. 根据定义：
+
+   $$
+   x_1' = \dot{x}_1 = \dot{\theta} = x_2
+   $$
+
+3. 原方程改写为：
+
+   $$
+   x_2' = \ddot{\theta} = -\frac{g}{L}\sin(x_1)
+   $$
+
+**最终得到的一阶系统：**
+
+$$
+\begin{cases}
+x_1' = x_2 \\
+x_2' = -\dfrac{g}{L}\sin(x_1)
+\end{cases}
+$$
+
+---
+
+### 3. 一阶系统的优点
+
+* **统一性**：不管是二阶、三阶，统统转成“一阶系统”后，ODE 求解器都能处理。
+* **状态空间形式**：和控制论、信号处理等领域的标准建模方法完全一致。
+
+  $$
+  \dot{\mathbf{x}} = f(\mathbf{x},t), \quad \mathbf{x}(0)=\mathbf{x}_0
+  $$
+* **数值计算**：
+
+  * Runge–Kutta (RK4) 等方法要求一阶形式；
+  * Python `scipy.integrate.solve_ivp` 也是要求你传入 $\dot{\mathbf{x}}=f(\mathbf{x},t)$。
+* **扩展性**：
+
+  * 方便加上阻尼、外力：
+
+    $$
+    x_2' = -\frac{g}{L}\sin(x_1) - c x_2 + F(t)
+    $$
+
+---
+
+### 4. 一阶系统的物理解释
+
+* **状态变量**：
+
+  * $x_1$：摆的位置（角度）；
+  * $x_2$：摆的速度（角速度）。
+
+* **演化规律**：
+
+  * 第一条方程：角度的变化率就是角速度；
+  * 第二条方程：角速度的变化率由重力恢复力决定。
+
+---
+
+### 5. 推广
+
+* 任意 $n$ 阶 ODE：
+
+  $$
+  y^{(n)} = F(t,y,y',\dots,y^{(n-1)})
+  $$
+
+  都可以引入 $n$ 个状态变量：
+
+  $$
+  x_1=y, \; x_2=y', \; \dots, \; x_n=y^{(n-1)}
+  $$
+
+  得到：
+
+  $$
+  \dot{x}_1=x_2,\;\; \dot{x}_2=x_3,\;\; \dots,\;\; \dot{x}_n=F(t,x_1,\dots,x_n)
+  $$
+
+---
+
+✅ **总结**：
+一阶系统化就是一种“降阶展开”的过程：
+
+* **数学上**：把任意高阶 ODE 化成一阶系统；
+* **物理上**：引入“状态变量”，把系统描述为“状态随时间演化”；
+* **计算上**：方便使用标准 ODE 积分器直接数值求解。
+
+---
+
+要不要我帮你写一个 **Python 代码示例**（用 `solve_ivp` 解单摆的一阶系统），这样你能看到从理论公式到数值解的完整闭环？
