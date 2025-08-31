@@ -1,164 +1,161 @@
 {
   "basics": {
     "name": "Jiashun Pang",
-    "label": "",
-    "image": "",
     "email": "xinguk2018@gmail.com",
-    "phone": "(912) 123-4567",
+    "phone": "18500450612",
     "url": "https://cocoj-p.github.io/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "summary": "Interdisciplinary researcher at the interface of Computational Mechanics, Applied Mathematics, and AI4Science, focusing on physics-informed modeling, ontology-driven reasoning, and machine-scientist workflows.",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+      "city": "Beijing",
+      "countryCode": "CN",
+      "region": "Beijing"
+    }
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
+      "name": "Institute for Mechanics, Chinese Academy of Sciences",
+      "position": "Research Assistant",
+      "startDate": "2021-10-01",
+      "endDate": "2025-10-01",
+      "summary": "Developed computational modeling tools, ontology-driven reasoning frameworks, and LLM logic plugins, contributing to AI4Science platforms and applications in scientific research.",
       "highlights": [
-        "Relativity"
+        "MosaicX: physics-constrained patch atlas for model discovery",
+        "OntoPilot: OWL DL + HermiT reasoning plugin for LLM safety",
+        "Sessync: ontology generation and crowdsourced validation toolchain",
+        "DDDA: data-driven dimensional analysis framework",
+        "MechOn-fluid: fluid mechanics ontology and knowledge graph"
       ]
     }
   ],
   "volunteer": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
+      "organization": "Movers4Climate",
+      "location": "Yunnan, China",
+      "position": "Volunteer",
+      "startDate": "2025-9-06",
+      "endDate": "2025-9-13",
+      "summary": "Served as Deputy Team Leader in a climate education volunteer program, delivering science outreach lessons to elementary school students and coordinating logistics for the team.",
       "highlights": [
-        "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.",
-        "Men of the year 2014 by Time magazine"
+        "Taught interactive classes on climate change awareness to primary school children",
+        "Coordinated with local schools for scheduling and activity planning",
+        "Managed logistics including teaching materials, transportation, and on-site support",
+        "Drove team members and ensured safe and timely travel during the program"
+      ]
+    },
+    {
+      "organization": "Ofund foundation",
+      "location": "Qinghai, China",
+      "position": "Volunteer",
+      "startDate": "2023-9-01",
+      "endDate": "2023-9-15",
+      "summary": "Led a volunteer team in rural Qinghai, coordinating climate and education outreach while conducting household visits and community surveys.",
+      "highlights": [
+        "Served as Team Leader, overseeing volunteer activities and coordinating with local schools",
+        "Organized and delivered educational sessions for primary school students",
+        "Managed team logistics, including scheduling, transportation, and teaching materials",
+        "Conducted household visits and interviews to gather insights on local education and living conditions"
+      ]
+    },
+    {
+      "organization": "Ofund foundation",
+      "location": "Qinghai, China",
+      "position": "Volunteer",
+      "startDate": "2018-9-01",
+      "endDate": "2018-9-15",
+      "summary": "Participated as a volunteer in rural education support, teaching mathematics to primary school students and conducting household visits in local communities.",
+      "highlights": [
+        "Taught mathematics classes to elementary school children in rural Qinghai",
+        "Conducted household visits and interviews to understand local educational needs",
+        "Supported team activities and assisted in lesson preparation and community engagement"
       ]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
+      "institution": "University of Manchester, Manchester, UK",
+      "location": "Manchester, UK",
+      "url": "https://www.manchester.ac.uk/",
+      "area": "Fluid machanics",
+      "studyType": "MSc",
+      "startDate": "2020-10-01",
+      "endDate": "2021-8-31",
       "courses": [
-        "Theory of Relativity"
+        "Fluid mechanics",
+        "Computational Fluid mechanics"
       ]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
     },
     {
-      "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
+      "institution": "University of Leeds, Leeds, UK",
+      "location": "Leeds, UK",
+      "url": "https://www.leeds.ac.uk/",
+      "area": "Mechanical Engineering",
+      "studyType": "BEng",
+      "startDate": "2017-10-01",
+      "endDate": "2020-08-31",
+      "courses": [
+        "Mechanics",
+        "Advanced Mathmatics"
+      ]
     },
     {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
-    }
-  ],
-  "publications": [
-    {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
-    },
-    {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
-    },
-    {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "institution": "HK University of Science and Technology, HK, China",
+      "location": "HK, China",
+      "url": "https://hkust.edu.hk/",
+      "area": "Robot design",
+      "studyType": "Summary school",
+      "startDate": "2018-6-01",
+      "endDate": "2018-10-01"
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
-      "icon": "fa-solid fa-hashtag",
+      "name": "Computational Mechanics & Applied Mathematics",
+      "level": "Advanced",
+      "icon": "fa-solid fa-cogs",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Continuum mechanics",
+        "Fluid mechanics",
+        "Physics-informed modeling",
+        "Dimensional analysis",
+        "Dynamical systems theory",
+        "Nonlinear and asymptotic analysis",
+        "Similarity methods",
+        "Optimization",
+        "Uncertainty quantification"
+      ]
+    },
+    {
+      "name": "AI4Science & Knowledge Graphs",
+      "level": "Advanced",
+      "icon": "fa-solid fa-brain",
+      "keywords": [
+        "Ontology modeling",
+        "Semantic reasoning",
+        "Trustworthy LLM logic plugins",
+        "Machine-scientist workflows",
+        "Automated model discovery",
+        "Knowledge Graph"
+      ]
+    },
+    {
+      "name": "Software & Programming",
+      "level": "Advanced",
+      "icon": "fa-solid fa-code",
+      "keywords": [
+        "Python",
+        "MATLAB",
+        "Web development (React, Flask/FastAPI)",
+        "App development (Qt, Docker)",
+        "Git/GitHub",
+        "CAD & 3D modeling (Solidworks)",
+        "CFD tools (Basilisk, Commercial software)",
+        "Semantic/KG tools (Protégé, Neo4j, OWL-LLM-Cookbook)"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Chinese Mandarin",
       "fluency": "Native speaker",
       "icon": ""
     },
@@ -168,43 +165,67 @@
       "icon": ""
     }
   ],
-  "interests": [
-    {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
-    }
-  ],
-  "references": [
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    },
-    {
-      "name": "Professor John Doe",
-      "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
+      "name": "MosaicX",
+      "summary": "A physics-constrained framework for automated model discovery that transforms implicit relations into explicit patch atlases. By integrating uncertainty quantification across regions and experimental data, MosaicX constructs structured, queryable, and optimizable models for scientific discovery.",
       "highlights": [
-        "Quantum Teleportation",
-        "Quantum Cryptography"
+        "Physics-informed model discovery",
+        "Implicit-to-explicit function mapping",
+        "Patch atlas construction",
+        "Uncertainty quantification for regional integration",
+        "Guidance for experiment design and data sampling",
+        "Structured and optimizable system for scientific reasoning"
       ],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "startDate": "2025"
+    },
+    {
+      "name": "OntoPilot",
+      "summary": "An ontology-driven framework integrating OWL DL modeling and HermiT reasoning under a closed-world assumption. Designed as a plugin for large language models, OntoPilot provides semantic guidance, consistency checking, and hallucination detection to enable safe and interpretable AI for scientific applications.",
+      "highlights": [
+        "Ontology modeling with OWL DL for formal knowledge representation",
+        "HermiT reasoning engine for logical consistency and closed-world inference",
+        "Integration with LLMs as a logic plugin",
+        "Semantic guidance for trustworthy AI responses",
+        "Hallucination detection and error reporting for interpretable AI"
+      ],
+      "startDate": "2024"
+    },
+    {
+      "name": "Sessync",
+      "summary": "An ontology generation and crowdsourced validation toolchain. Sessync enables researchers to submit ontology modeling tasks, open them to the community for peer review, and ensure quality assurance through crowdsourced evaluation workflows.",
+      "highlights": [
+        "Ontology task publishing and workflow management",
+        "Crowdsourced peer review and validation",
+        "Community-driven ontology improvement",
+        "Quality assurance mechanisms for semantic models",
+        "Integration with AI4Science knowledge graph pipelines"
+      ],
+      "startDate": "2022"
+    },
+    {
+      "name": "MechOn-fluid",
+      "summary": "An ontology-based knowledge graph for fluid mechanics, developed as a testbed for AI4Science tools and reasoning workflows. MechOn-fluid provides structured representations of fluid mechanics concepts, equations, and units to support ontology validation, semantic reasoning, and integration with automated modeling frameworks.",
+      "highlights": [
+        "Constructed ontology for fluid mechanics concepts and relations",
+        "Formalized equations, units, and physical quantities using OWL DL",
+        "Served as a benchmark for ontology validation and reasoning tools",
+        "Integrated with Sessync for crowdsourced review and quality assurance",
+        "Testbed for LLM plugin frameworks such as OntoPilot"
+      ],
+      "startDate": "2023"
+    },
+    {
+      "name": "DDDA",
+      "summary": "A data-driven dimensional analysis framework for discovering explicit dimensionless functions directly from experimental data, without requiring prior physical models or constraints.",
+      "highlights": [
+        "Performed dimensional analysis purely from experimental datasets",
+        "Discovered explicit functional relationships without prior models",
+        "Enabled interpretable mappings of experimental variables",
+        "Served as a foundation for MosaicX in physics-informed model discovery",
+        "Applied to scientific workflows for validation and experiment guidance"
+      ],
+      "startDate": "2021"
     }
   ]
 }
