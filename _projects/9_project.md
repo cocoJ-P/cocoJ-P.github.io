@@ -2,7 +2,7 @@
 layout: page
 title: Pelton Turbine–Jet Atomization Coupling (Incomplete Project)
 description: A batch simulation study of Pelton turbine–jet atomization coupling was conducted with Basilisk and a custom modeling tool. The project was discontinued due to an incorrect technical approach.
-img: assets/img/peltonCover.png
+img: assets/img/jetCover.png
 importance: 1
 category: completed
 ---
