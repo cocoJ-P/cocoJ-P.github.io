@@ -476,6 +476,21 @@ ninja.data = [{
           description: "a project with a background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
+            },},{id: "projects-sessync-master",
+          title: 'Sessync Master',
+          description: "A local platform for publishing, executing, and managing knowledge-engineering tasks.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/6_project/";
+            },},{id: "projects-pelton-turbine-parametric-modeling-tool",
+          title: 'Pelton Turbine Parametric Modeling Tool',
+          description: "A MATLAB GUI tool for parametric modeling of Pelton turbines using Bézier curves.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/7_project/";
+            },},{id: "projects-sessynchub",
+          title: 'SessyncHub',
+          description: "a collaborative platform for sharing and discovering knowledge collections(Ontologies, KG, and more).",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/8_project/";
             },},{
         id: 'social-email',
         title: 'email',
