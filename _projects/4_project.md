@@ -4,7 +4,7 @@ title: DDDA(Collabration)
 description: another without an image
 img:
 importance: 3
-category: Active Projects
+category: active
 ---
 
 Every project has a beautiful feature showcase page.

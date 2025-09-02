@@ -4,7 +4,7 @@ title: MosaicX
 description: with background image
 img: assets/img/12.jpg
 importance: 1
-category: Active Projects
+category: active
 related_publications: true
 ---
 
