@@ -491,6 +491,11 @@ ninja.data = [{
           description: "a collaborative platform for sharing and discovering knowledge collections(Ontologies, KG, and more).",
           section: "Projects",handler: () => {
               window.location.href = "/projects/8_project/";
+            },},{id: "projects-pelton-turbine-jet-atomization-coupling-incomplete-project",
+          title: 'Pelton Turbine–Jet Atomization Coupling (Incomplete Project)',
+          description: "A batch simulation study of Pelton turbine–jet atomization coupling was conducted with Basilisk and a custom modeling tool. The project was discontinued due to an incorrect technical approach.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/9_project/";
             },},{
         id: 'social-email',
         title: 'email',
