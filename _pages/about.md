@@ -2,16 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Computational Mechanics · Dynamical Systems · Physics-informed AI
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: ff.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>"Physics × AI for Trustworthy Discovery"</p>
+    <p>Email: xinguk2018@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/cocoj-p">cocoj-p</a></p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -27,8 +27,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+👋 Hi! I’m **Jiashun Pang**, exploring the intersection of **Mechanics, Mathematics, and AI4Science**.  
+I build frameworks like **MosaicX**, **OntoPilot**, and **Sessync** to push toward the vision of a *Machine Scientist*.  
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+My work also involves the **Semantic Web and ontology-based knowledge representation**, where I design tools for **ontology modeling, semantic reasoning, and knowledge graph integration**. Through frameworks such as **OntoPilot**, I develop **trustworthy AI workflows** by combining OWL DL reasoning, LLM logic plugins, and consistency checking to enhance interpretability and reliability in scientific AI.  
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+When I’m not coding, I enjoy teaching, open-source projects, and sharing ideas about science & technology.  
+Beyond research, I actively participate in **volunteer and charity programs**, and I’m passionate about **sports, hiking, and outdoor adventures**.  
