@@ -1,17 +1,39 @@
 ---
 layout: page
 title: Pelton Turbine Parametric Modeling Tool
-description: "2021-2022<br>A MATLAB GUI tool for parametric modeling of Pelton turbines using Bézier curves."
+description: "2021-2022<br><br>A MATLAB GUI tool for parametric modeling of Pelton turbines using Bézier curves."
 img: assets/img/peltonCover.png
 importance: 2
 category: completed
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+# Pelton Turbine Parametric Modeling Tool
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+- **Date / Duration**: 2021–2022  
+- **Contributors**: Jiashun Pang  
+- **Status**: Completed  
+
+---
+
+## 1. Motivation 
+This engineering project aims to develop a **parametric modeling tool** for designing a new *Pelton turbine bucket*, with design parameters **extending far beyond existing models**, in pursuit of **higher efficiency and reliability**. In this scenario, the **lack of both historical datasets and experimental data** makes traditional data-driven evaluation or benchmarking infeasible. Rather than keeping the geometry fixed and only tuning CFD conditions, our approach couples **parametric geometry modeling with CFD simulations**, enabling both domains to co-evolve through parameter variation. To this end, we are exploring an **automated workflow** that integrates the modeling stage with CFD into a **feedback loop**, iteratively refining the design until an **optimized model emerges**. This effort also represents the initial step toward my long-term vision — the development of a **“Machine Scientist.”**
+
+---
+
+## 2. Principle
+
+aaaaaaaaaaaaa
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/bTheory1.png" title="bTheory1" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    This image can also have a caption. It's like magic.
+</div>
+
+---
 
     ---
     layout: page
