@@ -467,7 +467,7 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/3_project/";
             },},{id: "projects-ddda-collabration",
-          title: 'DDDA(Collabration)',
+          title: 'DDDA (Collabration)',
           description: "another without an image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/4_project/";
