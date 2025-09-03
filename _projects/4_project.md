@@ -1,6 +1,6 @@
 ---
 layout: page
-title: DDDA(Collabration)
+title: DDDA (Collabration)
 description: another without an image
 img:
 importance: 3

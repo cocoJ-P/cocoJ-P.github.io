@@ -2,7 +2,7 @@
 layout: page
 title: MechOn-fluid
 description: a project with a background image
-img: assets/img/1.jpg
+img: assets/img/MechOnFluidCover.png
 importance: 3
 category: active
 ---
