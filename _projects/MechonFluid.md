@@ -1,9 +1,9 @@
 ---
 layout: page
-title: DDDA (Collabration)
-description: another without an image
-img:
-importance: 3
+title: MechOn-fluid
+description: a project with a background image
+img: assets/img/MechOnFluidCover.png
+importance: 4
 category: active
 ---
 

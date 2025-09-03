@@ -1,10 +1,10 @@
 ---
 layout: page
-title: Pelton Turbine Parametric Modeling Tool
-description: A MATLAB GUI tool for parametric modeling of Pelton turbines using Bézier curves.
-img: assets/img/peltonCover.png
+title: DDDA
+description: This project is a collaboration under the supervision of Anlab.
+img:
 importance: 1
-category: completed
+category: co-op
 ---
 
 Every project has a beautiful feature showcase page.
