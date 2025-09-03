@@ -451,51 +451,56 @@ ninja.data = [{
           section: "News",},{id: "news-第一次有了个人网站的样子-大家多多关注-sparkles-smile",
           title: '第一次有了个人网站的样子，大家多多关注 :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-mosaicx",
-          title: 'MosaicX',
-          description: "with background image",
+          section: "News",},{id: "projects-ddda",
+          title: 'DDDA',
+          description: "This project is a collaboration under the supervision of Anlab.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-ontopilot",
-          title: 'OntoPilot',
-          description: "a project with a background image and giscus comments",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/2_project/";
-            },},{id: "projects-sessync",
-          title: 'Sessync',
-          description: "a project that redirects to another website",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/3_project/";
-            },},{id: "projects-ddda-collabration",
-          title: 'DDDA (Collabration)',
-          description: "another without an image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/4_project/";
-            },},{id: "projects-mechon-fluid",
-          title: 'MechOn-fluid',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-sessync-master",
-          title: 'Sessync Master',
-          description: "A local platform for publishing, executing, and managing knowledge-engineering tasks.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/6_project/";
-            },},{id: "projects-pelton-turbine-parametric-modeling-tool",
-          title: 'Pelton Turbine Parametric Modeling Tool',
-          description: "A MATLAB GUI tool for parametric modeling of Pelton turbines using Bézier curves.",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/7_project/";
-            },},{id: "projects-sessynchub",
-          title: 'SessyncHub',
-          description: "a collaborative platform for sharing and discovering knowledge collections(Ontologies, KG, and more).",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/8_project/";
+              window.location.href = "/projects/DDDA/";
             },},{id: "projects-pelton-turbine-jet-atomization-coupling-incomplete-project",
           title: 'Pelton Turbine–Jet Atomization Coupling (Incomplete Project)',
           description: "A batch simulation study of Pelton turbine–jet atomization coupling was conducted with Basilisk and a custom modeling tool. The project was discontinued due to an incorrect technical approach.",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/9_project/";
+              window.location.href = "/projects/Jet/";
+            },},{id: "projects-llm-for-mechanics",
+          title: 'LLM for Mechanics',
+          description: "This project is a collaboration under the supervision of Anlab.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/LLMapp/";
+            },},{id: "projects-mechon-fluid",
+          title: 'MechOn-fluid',
+          description: "a project with a background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/MechonFluid/";
+            },},{id: "projects-mosaicx",
+          title: 'MosaicX',
+          description: "with background image",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/MosaicX/";
+            },},{id: "projects-ontopilot",
+          title: 'OntoPilot',
+          description: "a project with a background image and giscus comments",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/OntoPilot/";
+            },},{id: "projects-pelton-turbine-parametric-modeling-tool",
+          title: 'Pelton Turbine Parametric Modeling Tool',
+          description: "A MATLAB GUI tool for parametric modeling of Pelton turbines using Bézier curves.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/PModelling/";
+            },},{id: "projects-sessync",
+          title: 'Sessync',
+          description: "a project that redirects to another website",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/Sessync/";
+            },},{id: "projects-sessynchub",
+          title: 'SessyncHub',
+          description: "a collaborative platform for sharing and discovering knowledge collections(Ontologies, KG, and more).",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/SessyncH/";
+            },},{id: "projects-sessync-master",
+          title: 'Sessync Master',
+          description: "A local platform for publishing, executing, and managing knowledge-engineering tasks.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/sessyncM/";
             },},{
         id: 'social-email',
         title: 'email',
