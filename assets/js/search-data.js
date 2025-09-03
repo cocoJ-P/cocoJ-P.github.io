@@ -25,7 +25,7 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "A growing collection of your cool projects.",
+          description: "A curated showcase of my work, organized into four categories: Active (under active development), Completed (finished works), Concepts (early-stage ideas), and Co-op (collaborations). Together they reflect both ongoing focus and past explorations.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
