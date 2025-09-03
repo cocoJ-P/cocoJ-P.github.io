@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Pelton Turbine Parametric Modeling Tool
-description: A MATLAB GUI tool for parametric modeling of Pelton turbines using Bézier curves.
+description: "2021-2022<br>A MATLAB GUI tool for parametric modeling of Pelton turbines using Bézier curves."
 img: assets/img/peltonCover.png
 importance: 2
 category: completed
