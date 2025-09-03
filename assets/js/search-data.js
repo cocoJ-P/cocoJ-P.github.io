@@ -483,7 +483,7 @@ ninja.data = [{
               window.location.href = "/projects/OntoPilot/";
             },},{id: "projects-pelton-turbine-parametric-modeling-tool",
           title: 'Pelton Turbine Parametric Modeling Tool',
-          description: "A MATLAB GUI tool for parametric modeling of Pelton turbines using Bézier curves.",
+          description: "2021-2022A MATLAB GUI tool for parametric modeling of Pelton turbines using Bézier curves.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/PModelling/";
             },},{id: "projects-sessync",
