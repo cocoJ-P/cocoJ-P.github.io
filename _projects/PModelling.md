@@ -101,6 +101,9 @@ Here, u and v are parametric coordinates, and the basis functions ensure smooth 
     Illustration of a Bézier surface: (a) control grid defined by points $p_{ij}$ (b) the resulting smooth surface generated from the control points. As introduced earlier for Bézier curves, the same principle extends naturally to surfaces.
 </div>
 
+## 2.3 Bézier surface
+
+
 ---
 
 # 3 Application to bucket design
@@ -133,7 +136,41 @@ The construction process follows a clear sequence. First, a control-point framew
 
 ## 3.2 Development of the MATLAB GUI tool
 
-To facilitate practical use, a dedicated MATLAB GUI was developed to streamline the parametric design process. The interface allows users to adjust design parameters, and visualize the resulting bucket geometry in real time. This tool provides a more intuitive workflow, enabling rapid prototyping and iterative improvements without requiring direct coding or manual surface construction.
+To support a broad range of users, the GUI integrates several functional modules, including parameter input panels, real-time 3D visualization, and export options for downstream CFD analysis. Control points can be either manually defined or imported from external files, and sliders are provided to adjust geometric parameters interactively. The back-end routines automatically update the Bézier surface and regenerate the bucket geometry in response to user inputs, ensuring a smooth workflow from design exploration to model export. In addition, the GUI supports exporting the generated surfaces into standard CAD and CFD formats, bridging the gap between conceptual modeling and numerical simulation.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/1edition.png" title="1edition" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The initial version of the MATLAB GUI, providing interactive parameter adjustment and surface generation as a foundation for later improvements.
+</div>
+
+After the geometry is generated, two output strategies are implemented in the GUI to prepare the model for downstream use:
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/flow1.png" title="flow1" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    <strong>Figure 1.</strong> Patch-wise thickening
+</div>
+
+**Patch-wise thickening**: Each surface patch is thickened along its normal direction, followed by a fusion step to assemble the bucket as a solid body. This approach preserves local surface definitions but may introduce discontinuities at patch boundaries.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/flow2.png" title="flow2" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    <strong>Figure 1.</strong> STEP-based thickening
+</div>
+
+**STEP-based thickening**: Alternatively, all surface patches are first merged and exported as a single STEP file. A global thickening operation is then applied to the unified geometry (Figure 2). This strategy produces a consistent solid model and is generally more robust for CAD/CFD integration.
+
+Both methods provide STL output for meshing and CFD simulations, while the STEP-based approach also enables compatibility with standard CAD workflows.
 
 ## 3.3 Geometry post-processing
 
