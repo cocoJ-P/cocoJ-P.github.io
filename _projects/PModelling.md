@@ -87,10 +87,12 @@ Together, these properties guarantee that Bézier curves are smooth, stable, and
 </div>
 
 In this project, the bucket geometry is generated using bicubic Bézier surfaces, which provide a flexible yet mathematically rigorous representation of complex curves. The surface is defined by a grid of control points $p_{ij}$, with the shape interpolated through Bernstein basis functions $B_{i}(u)$ and $B_{j}(v)$:
+
 $$
     Q(u, v) = \sum^{3}_{i=0} \sum^{3}_{j=0} p_{ij}B_{i}(u)B_{j}(v)
 $$
-Here, u and v are parametric coordinates, and the basis functions ensure smooth transitions across the surface. The figure illustrates this construction process: starting from the control mesh, passing through a coarse polygonal form, and resulting in the final smooth bucket surface suitable for turbine flow simulations.
+
+Here, u and v are parametric coordinates, and the basis functions ensure smooth transitions across the surface. The figure above illustrates this construction process: starting from the control mesh, passing through a coarse polygonal form, and resulting in the final smooth bucket surface suitable for turbine flow simulations.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -98,10 +100,38 @@ Here, u and v are parametric coordinates, and the basis functions ensure smooth 
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    Illustration of a Bézier surface: (a) control grid defined by points $p_{ij}$ (b) the resulting smooth surface generated from the control points. As introduced earlier for Bézier curves, the same principle extends naturally to surfaces.
+</div>
+
+### 2.3 Applied in bucket design
+
+In this subsection, we apply the Bézier surface approach to the design of a Pelton turbine bucket. Specifically, we adopt the control-point layout reported by Vessaz et al. (2017) and embed it directly into our workflow. Rather than pursuing mathematical optimization, the literature-provided control points are used as the geometric foundation, allowing us to validate our parametric modeling tool and establish a consistent starting point for subsequent CFD coupling and performance analysis.
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref1.png" title="ref1" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref2.png" title="ref2" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref3.png" title="ref3" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref4.png" title="ref4" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Left: A quadratic Bézier curve defined by two endpoints and two control points.
+Right: The corresponding Bernstein basis functions of degree 3, which govern the influence of each control point along the curve.
 </div>
 
 ---
+
+## 5. References
+
+1. Vessaz, C., Andolfatto, L., Avellan, F., & Tournier, C. (2017). *Toward design optimization of a Pelton turbine runner*. Structural and Multidisciplinary Optimization, 55(1). https://doi.org/10.1007/s00158-016-1465-7
+
 
     ---
     layout: page
