@@ -7,8 +7,6 @@ importance: 2
 category: completed
 ---
 
-# Pelton Turbine Parametric Modeling Tool
-
 - **Date / Duration**: 2021–2022  
 - **Contributors**: Jiashun Pang  
 - **Status**: Completed  
@@ -30,14 +28,14 @@ category: completed
 
 ---
 
-## 1. Motivation 
+# 1. Motivation 
 This engineering project aims to develop a **parametric modeling tool** for designing a new *Pelton turbine bucket*, with design parameters **extending far beyond existing models**, in pursuit of **higher efficiency and reliability**. In this scenario, the **lack of both historical datasets and experimental data** makes traditional data-driven evaluation or benchmarking infeasible. Rather than keeping the geometry fixed and only tuning CFD conditions, our approach couples **parametric geometry modeling with CFD simulations**, enabling both domains to co-evolve through parameter variation. To this end, we are exploring an **automated workflow** that integrates the modeling stage with CFD into a **feedback loop**, iteratively refining the design until an **optimized model emerges**. This effort also represents the initial step toward my long-term vision — the development of a **“Machine Scientist.”**
 
 ---
 
-## 2. Principle
+# 2. Principle
 
-### 2.1 Bernstein basis function
+## 2.1 Bernstein basis function
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -76,7 +74,7 @@ These functions have the following important properties:
 Together, these properties guarantee that Bézier curves are smooth, stable, and intuitive to design using control points, as shown in the left figure.
 
 
-### 2.2 Bézier surface
+## 2.2 Bézier surface
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/PModelling/BezierSurface.png" title="bTheory1" class="img-fluid rounded z-depth-1" %}
@@ -103,32 +101,55 @@ Here, u and v are parametric coordinates, and the basis functions ensure smooth 
     Illustration of a Bézier surface: (a) control grid defined by points $p_{ij}$ (b) the resulting smooth surface generated from the control points. As introduced earlier for Bézier curves, the same principle extends naturally to surfaces.
 </div>
 
-### 2.3 Applied in bucket design
+---
+
+# 3 Application to bucket design
+
+In this chapter, the Bézier surface formulation introduced earlier is applied to the practical design of a Pelton turbine bucket. The process is organized into three stages: the translation of Bézier surfaces into bucket geometry, the development of a MATLAB-based parametric GUI, and the post-processing of the generated models for further analysis and simulation.
+
+## 3.1 From Bézier surfaces to bucket geometry
 
 In this subsection, we apply the Bézier surface approach to the design of a Pelton turbine bucket. Specifically, we adopt the control-point layout reported by Vessaz et al. (2017) and embed it directly into our workflow. Rather than pursuing mathematical optimization, the literature-provided control points are used as the geometric foundation, allowing us to validate our parametric modeling tool and establish a consistent starting point for subsequent CFD coupling and performance analysis.
 
+The construction process follows a clear sequence. First, a control-point framework is established to define the basic geometric skeleton of the bucket. Next, a Bézier surface is generated from these points, producing a smooth and mathematically consistent representation. To obtain the full bucket geometry, the framework is mirrored, ensuring symmetry across the bucket structure. Finally, the complete bucket surface is generated using the Bézier formulation, yielding a continuous and well-defined geometry suitable for engineering applications.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref1.png" title="ref1" class="img-fluid rounded z-depth-1" style="height:200px; object-fit:contain;" %}
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/try1.png" title="try1" class="img-fluid rounded z-depth-1" style="height:200px; object-fit:contain;" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref2.png" title="ref2" class="img-fluid rounded z-depth-1" style="height:200px; object-fit:contain;" %}
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/try2.png" title="try2" class="img-fluid rounded z-depth-1" style="height:200px; object-fit:contain;" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref3.png" title="ref3" class="img-fluid rounded z-depth-1" style="height:200px; object-fit:contain;" %}
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/try3.png" title="try3" class="img-fluid rounded z-depth-1" style="height:200px; object-fit:contain;" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref4.png" title="ref4" class="img-fluid rounded z-depth-1" style="height:200px; object-fit:contain;" %}
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/try4.png" title="try4" class="img-fluid rounded z-depth-1" style="height:200px; object-fit:contain;" %}
     </div>
 </div>
 <div class="caption">
-    Left: A quadratic Bézier curve defined by two endpoints and two control points.
-Right: The corresponding Bernstein basis functions of degree 3, which govern the influence of each control point along the curve.
+    From left to right: (1) construction of the control-point framework, (2) generation of the Bézier surface, (3) mirroring of the framework to form the bucket structure, and (4) generation of the final bucket surface using Bézier representation.
 </div>
+
+## 3.2 Development of the MATLAB GUI tool
+
+To facilitate practical use, a dedicated MATLAB GUI was developed to streamline the parametric design process. The interface allows users to adjust design parameters, and visualize the resulting bucket geometry in real time. This tool provides a more intuitive workflow, enabling rapid prototyping and iterative improvements without requiring direct coding or manual surface construction.
+
+## 3.3 Geometry post-processing
+
+After the bucket geometry is generated, post-processing is performed to prepare the model for analysis and simulation. This stage includes surface smoothing, mesh generation, and the export of geometry in formats compatible with CFD solvers. The post-processing step ensures that the designed bucket can be seamlessly embedded into a simulation pipeline for hydraulic performance evaluation.
 
 ---
 
-## 5. References
+# 4. APP迭代
+
+---
+
+# 5. Conclusion and 心得体会
+
+---
+
+# 6. References
 
 1. Vessaz, C., Andolfatto, L., Avellan, F., & Tournier, C. (2017). *Toward design optimization of a Pelton turbine runner*. Structural and Multidisciplinary Optimization, 55(1). https://doi.org/10.1007/s00158-016-1465-7
 
