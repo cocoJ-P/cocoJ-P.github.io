@@ -37,7 +37,60 @@ This engineering project aims to develop a **parametric modeling tool** for desi
 
 ## 2. Principle
 
-aaaaaaaaaaaaa
+### 2.1 Bernstein basis function
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/Bernstein1.png" title="Bernstein1" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/Bernstein2.png" title="Bernstein2" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Left: A quadratic Bézier curve defined by two endpoints and two control points.
+Right: The corresponding Bernstein basis functions of degree 3, which govern the influence of each control point along the curve.
+</div>
+
+The construction of a Bézier curve is based on **Bernstein basis functions**, which determine how control points influence the final curve.  
+For a cubic Bézier curve, the parametric representation can be written as:
+
+$$
+Q_u=\sum^3_{i=0}p_i B_i(u), \qquad B_i(u)=\frac{3!}{i!(3-i)!}u^i(1-u)^{3-i}
+$$
+
+where $Q_u$ is a point on the curve at parameter $u \in [0,1]$, $p_i$ are the control points, and $B_i(u)$ are the Bernstein polynomials of degree 3.
+
+Explicitly, the four basis functions are:
+
+$$
+B_0(u)=(1-u)^3, \qquad B_1(u)=3u(1-u)^2, \qquad B_2(u)=3u^2(1-u), \qquad B_3(u)=u^3
+$$
+
+These functions have the following important properties:
+
+- **Non-negativity**: $B_i(u) \geq 0$ for all $u \in [0,1]$.  
+- **Partition of unity**: $\sum_{i=0}^3 B_i(u) = 1$, ensuring the curve always lies within the convex hull of its control points.  
+- **Local control**: Each $B_i(u)$ determines the influence of control point $p_i$ along the curve, as illustrated in the right figure.  
+
+Together, these properties guarantee that Bézier curves are smooth, stable, and intuitive to design using control points, as shown in the left figure.
+
+
+### 2.2 Bézier surface
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/BezierSurface.png" title="bTheory1" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    From left to right: the control mesh, the intermediate polygonal surface, and the final smooth Bézier surface of the Pelton turbine bucket.
+</div>
+
+In this project, the bucket geometry is generated using bicubic Bézier surfaces, which provide a flexible yet mathematically rigorous representation of complex curves. The surface is defined by a grid of control points $p_{ij}$, with the shape interpolated through Bernstein basis functions $B_{i}(u)$ and $B_{j}(v)$:
+$$
+    Q(u, v) = \sum^{3}_{i=0} \sum^{3}_{j=0} p_{ij}B_{i}(u)B_{j}(v)
+$$
+Here, u and v are parametric coordinates, and the basis functions ensure smooth transitions across the surface. The figure illustrates this construction process: starting from the control mesh, passing through a coarse polygonal form, and resulting in the final smooth bucket surface suitable for turbine flow simulations.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
