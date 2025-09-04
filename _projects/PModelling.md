@@ -109,16 +109,16 @@ In this subsection, we apply the Bézier surface approach to the design of a Pel
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref1.png" title="ref1" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref1.png" title="ref1" class="img-fluid rounded z-depth-1" style="height:200px; object-fit:contain;" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref2.png" title="ref2" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref2.png" title="ref2" class="img-fluid rounded z-depth-1" style="height:200px; object-fit:contain;" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref3.png" title="ref3" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref3.png" title="ref3" class="img-fluid rounded z-depth-1" style="height:200px; object-fit:contain;" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref4.png" title="ref4" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/ref4.png" title="ref4" class="img-fluid rounded z-depth-1" style="height:200px; object-fit:contain;" %}
     </div>
 </div>
 <div class="caption">
