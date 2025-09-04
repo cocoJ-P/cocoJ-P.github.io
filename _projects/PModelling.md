@@ -264,7 +264,14 @@ Through these three iterations, the application evolved from a simple GUI protot
 
 ---
 
-# 5. Conclusion and 心得体会
+# 5. Conclusion and Reflections
+
+In this project, we demonstrated how Bézier surfaces can be applied to the design of Pelton turbine buckets, starting from the mathematical foundation of Bernstein basis functions to the implementation of a MATLAB-based parametric GUI. The workflow was extended with post-processing strategies, enabling both STL and STEP exports, adjustable triangulation resolution, and geometry thickening for CFD simulations. Through three iterations of development, the application evolved from a simple prototype into an end-to-end tool that bridges surface modeling with engineering analysis.
+
+**Reflections.**  
+At the time of starting this work, I had no experience with Python and relied entirely on MATLAB. While MATLAB provided a rapid prototyping environment, its closed ecosystem and the lack of command-line interaction became clear limitations for building extensible workflows. This realization motivated me to begin learning Python and to adopt it in my subsequent projects.  
+
+Moreover, this work represented the first attempt to conceptualize an **automated workflow** for parametric design and simulation. Although simple in scope, it laid the groundwork for the automation philosophy that later shaped the **MosaicX project**. In retrospect, the Pelton bucket tool was not only a practical application of Bézier surfaces but also the **seed of the “Machine Scientist” vision**, reinforcing the idea that scientific discovery can be supported by automated, reasoning-driven computational systems.
 
 ---
 
