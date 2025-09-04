@@ -13,6 +13,21 @@ category: completed
 - **Contributors**: Jiashun Pang  
 - **Status**: Completed  
 
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/app31.png" title="app31" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/app32.png" title="app32" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/PModelling/app33.png" title="app33" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The third version of the Pelton Turbine Parametric Modeling Tool, developed entirely in MATLAB GUI.
+</div>
+
 ---
 
 ## 1. Motivation 
