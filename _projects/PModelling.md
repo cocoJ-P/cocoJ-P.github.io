@@ -10,6 +10,7 @@ category: completed
 - **Date / Duration**: 2021–2022  
 - **Contributors**: Jiashun Pang  
 - **Status**: Completed  
+- **Affiliation**: Key Laboratory for Mechanics in Fluid Solid Coupling Systems, Institute of Mechanics, Chinese Acadymy of Sciences
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
