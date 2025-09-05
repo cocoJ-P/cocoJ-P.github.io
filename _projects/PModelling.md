@@ -29,6 +29,15 @@ category: completed
 
 ---
 
+# Project symmary
+This project focused on the parametric design of Pelton turbine buckets using Bézier surfaces as a mathematical foundation. By leveraging Bernstein basis functions, bucket geometries were represented in a smooth, flexible, and rigorous manner. A MATLAB-based GUI was developed to support interactive parameter adjustment, visualization, and export, enabling users to explore a broad design space beyond conventional models.
+
+The application evolved iteratively across three versions: from a simple prototype that generated Bézier surfaces, to a tool supporting symmetry operations, geometry thickening, and post-processing for CFD readiness. The final version provided both STL and STEP outputs, with adjustable tessellation resolution, bridging the gap between mathematical modeling, CAD interoperability, and CFD simulation workflows.
+
+Although initially developed without prior programming experience outside MATLAB, this project marked a turning point in my research approach. It not only demonstrated the feasibility of automated geometry–simulation coupling, but also served as the seed of my long-term vision — the development of a “Machine Scientist” capable of unifying parametric modeling, CFD, and reasoning-driven optimization.
+
+---
+
 # 1. Motivation 
 This engineering project aims to develop a **parametric modeling tool** for designing a new *Pelton turbine bucket*, with design parameters **extending far beyond existing models**, in pursuit of **higher efficiency and reliability**. In this scenario, the **lack of both historical datasets and experimental data** makes traditional data-driven evaluation or benchmarking infeasible. Rather than keeping the geometry fixed and only tuning CFD conditions, our approach couples **parametric geometry modeling with CFD simulations**, enabling both domains to co-evolve through parameter variation. To this end, we are exploring an **automated workflow** that integrates the modeling stage with CFD into a **feedback loop**, iteratively refining the design until an **optimized model emerges**. This effort also represents the initial step toward my long-term vision — the development of a **“Machine Scientist.”**
 
