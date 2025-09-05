@@ -456,9 +456,9 @@ ninja.data = [{
           description: "This project is a collaboration under the supervision of Anlab.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/DDDA/";
-            },},{id: "projects-pelton-turbine-jet-atomization-coupling-incomplete-project",
-          title: 'Pelton Turbine–Jet Atomization Coupling (Incomplete Project)',
-          description: "A batch simulation study of Pelton turbine–jet atomization coupling was conducted with Basilisk and a custom modeling tool. The project was discontinued due to an incorrect technical approach.",
+            },},{id: "projects-bucket-jet-coupling",
+          title: 'Bucket–Jet Coupling',
+          description: "2022-2023&amp;nbsp;(Incomplete Project)A batch simulation study of Pelton turbine–jet atomization coupling was conducted with Basilisk and a custom modeling tool. The project was discontinued due to an incorrect technical approach.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/Jet/";
             },},{id: "projects-llm-for-mechanics",
