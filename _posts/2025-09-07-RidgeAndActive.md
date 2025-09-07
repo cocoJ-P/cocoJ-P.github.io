@@ -7,6 +7,7 @@ tags: [dimensionality-reduction, ridge-function, response-surface, active-subspa
 categories: [Mathematics, Physics, Machine-Scientist]
 author: Jiashun Pang
 toc: true
+featured: true
 mathjax: true
 chart:
   plotly: true
