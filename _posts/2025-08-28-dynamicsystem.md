@@ -2,15 +2,15 @@
 layout: post
 title: Dynamic Systems 101 Part 1 The Pendulum
 date: 2025-08-28
-description: this is what included plotly.js code could look like
-tags: formatting charts
-categories: sample-posts
+description: This is a beginner-friendly series on learning dynamical systems.
+tags: 101 Learn
+categories: Dynamic-system Physics 
+author: Jiashun Pang
+toc: true
+mathjax: true
 chart:
   plotly: true
 ---
-
-
-# Dynamic Systems 101: Part 1 — The Pendulum
 
 In this series, when we talk about dynamical systems, we mainly mean finite-dimensional systems described by ordinary differential equations (ODEs). These are models where the state evolves in time but does not explicitly depend on space, such as the pendulum, the logistic map, or the Lorenz system.
 
