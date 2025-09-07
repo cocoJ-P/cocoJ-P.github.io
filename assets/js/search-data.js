@@ -72,7 +72,29 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-dynamic-systems-101-part-1-the-pendulum",
+            },{id: "post-from-ridge-functions-to-active-subspaces-dimensionality-reduction-in-high-dimensional-physical-problems",
+        
+          title: "From Ridge Functions to Active Subspaces: Dimensionality Reduction in High-Dimensional Physical Problems",
+        
+        description: "An accessible exploration of key mathematical ideas—ridge functions, response surfaces, and active subspaces—that reveal hidden simplicity in complex physical systems.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/RidgeAndActive/";
+          
+        },
+      },{id: "post-toward-ddda-1-key-concepts-you-should-know",
+        
+          title: "Toward DDDA (1): Key Concepts You Should Know",
+        
+        description: "A beginner-friendly introduction to the fundamental concepts behind data-driven dimensional analysis, setting the stage for a series of explorations.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2025/DDDA1/";
+          
+        },
+      },{id: "post-dynamic-systems-101-part-1-the-pendulum",
         
           title: "Dynamic Systems 101 Part 1 The Pendulum",
         
@@ -81,17 +103,6 @@ ninja.data = [{
         handler: () => {
           
             window.location.href = "/blog/2025/dynamicsystem/";
-          
-        },
-      },{id: "post-a-post-with-image-galleries",
-        
-          title: "a post with image galleries",
-        
-        description: "this is what included image galleries could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/DDDA1/";
           
         },
       },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
@@ -103,17 +114,6 @@ ninja.data = [{
         handler: () => {
           
             window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
-          
-        },
-      },{id: "post-a-post-with-tabs",
-        
-          title: "a post with tabs",
-        
-        description: "this is what included tabs in a post could look like",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/tabs/";
           
         },
       },{id: "post-a-post-with-typograms",
