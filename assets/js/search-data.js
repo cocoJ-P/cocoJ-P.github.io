@@ -76,7 +76,7 @@ ninja.data = [{
         
           title: "Dynamic Systems 101 Part 1 The Pendulum",
         
-        description: "this is what included plotly.js code could look like",
+        description: "This is a beginner-friendly series on learning dynamical systems.",
         section: "Posts",
         handler: () => {
           
@@ -91,7 +91,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/photo-gallery/";
+            window.location.href = "/blog/2024/DDDA1/";
           
         },
       },{id: "post-google-gemini-updates-flash-1-5-gemma-2-and-project-astra",
