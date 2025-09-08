@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "From Ridge Functions to Active Subspaces: Dimensionality Reduction in High-Dimensional Physical Problems"
+title: "Ridge Functions, Response surface, Active Subspaces"
 date: 2025-09-07
 description: "An accessible exploration of key mathematical ideas—ridge functions, response surfaces, and active subspaces—that reveal hidden simplicity in complex physical systems."
 tags: [dimensionality-reduction, ridge-function, response-surface, active-subspace, learning]
