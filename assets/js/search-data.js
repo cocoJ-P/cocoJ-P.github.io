@@ -72,9 +72,9 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-from-ridge-functions-to-active-subspaces-dimensionality-reduction-in-high-dimensional-physical-problems",
+            },{id: "post-ridge-functions-response-surface-active-subspaces",
         
-          title: "From Ridge Functions to Active Subspaces: Dimensionality Reduction in High-Dimensional Physical Problems",
+          title: "Ridge Functions, Response surface, Active Subspaces",
         
         description: "An accessible exploration of key mathematical ideas—ridge functions, response surfaces, and active subspaces—that reveal hidden simplicity in complex physical systems.",
         section: "Posts",
