@@ -124,7 +124,7 @@ ninja.data = [{
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2024/typograms/";
+            window.location.href = "/blog/2024/ActiveSubspace/";
           
         },
       },{id: "post-a-post-that-can-be-cited",
