@@ -1,8 +1,8 @@
 ---
 layout: post
-title: a post with typograms
+title: Active Subspaces 1: Finding Important Directions in High Dimensions
 date: 2024-04-29 23:36:10
-description: this is what included typograms code could look like
+description: An intuitive introduction to Active Subspaces. We explain why high-dimensional models often hide lower-dimensional structures, connect the idea to ridge functions, and show simple toy examples that reveal how “important directions” emerge.
 tags: formatting diagrams
 categories: sample-posts
 typograms: true
