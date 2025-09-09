@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Active Subspaces 1: Finding Important Directions in High Dimensions
-date: 2024-04-29 23:36:10
+date: 2025-09-09 23:36:10
 description: An intuitive introduction to Active Subspaces. We explain why high-dimensional models often hide lower-dimensional structures, connect the idea to ridge functions, and show simple toy examples that reveal how “important directions” emerge.
 tags: formatting diagrams
 categories: sample-posts

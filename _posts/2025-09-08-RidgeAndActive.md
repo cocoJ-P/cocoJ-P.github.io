@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ridge Functions, Response surface, Active Subspaces"
-date: 2025-09-07
+date: 2025-09-08
 description: "An accessible exploration of key mathematical ideas—ridge functions, response surfaces, and active subspaces—that reveal hidden simplicity in complex physical systems."
 tags: [dimensionality-reduction, ridge-function, response-surface, active-subspace, learning]
 categories: [Mathematics, Physics, Machine-Scientist]
@@ -101,6 +101,16 @@ chart:
   * Active subspace analysis reveals that the dominant direction corresponds to the **Reynolds number**, effectively reducing the dimensionality from four variables to one.
 
 * **Key message:** Active subspaces bridge physics and data: they turn the gradient structure of a model into a practical recipe for **dimension reduction**, making high-dimensional problems tractable without losing the essential behavior.
+
+Ref:
+
+{{< linkcard
+    url="https://openai.com"
+    title="OpenAI"
+    desc="人工智能研究与应用 | 官方网站"
+    image="https://assets-global.website-files.com/650.../openai-og.jpg"
+>}}
+
 
 ---
 
