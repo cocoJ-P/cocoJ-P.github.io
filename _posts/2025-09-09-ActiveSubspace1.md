@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Active Subspaces 1: Finding Important Directions in High Dimensions
-date: 2025-09-09 23:36:10
+date: 2025-09-09 17:30:00
 description: An intuitive introduction to Active Subspaces. We explain why high-dimensional models often hide lower-dimensional structures, connect the idea to ridge functions, and show simple toy examples that reveal how “important directions” emerge.
 tags: active-subspaces dimensionality-reduction ridge-function
 categories: machine-scientist physics
@@ -52,6 +52,8 @@ $$
 
 At first, it looks like both $x_1$ and $x_2$ are needed.  
 But if you look closer, the function only depends on the **direction $x_1 + 0.1x_2$**. That’s the *important direction*.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/cocoJ-P/LinearAlgebra-in-MosaicX/blob/main/democode/ActiveSubspace.ipynb)
 
 ```python
 import numpy as np
