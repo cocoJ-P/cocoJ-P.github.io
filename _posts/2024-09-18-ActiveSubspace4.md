@@ -6,4 +6,6 @@ description: Active Subspaces excel at finding linear combinations of variables,
 tags: formatting diagrams
 categories: sample-posts
 code_diff: true
+thumbnail: assets/blog/activeSubspace1.jpg
+
 ---

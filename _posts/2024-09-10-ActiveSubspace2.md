@@ -6,4 +6,5 @@ description: A step-by-step dive into the mathematics of Active Subspaces. From 
 tags: formatting diagrams
 categories: sample-posts
 code_diff: true
+thumbnail: assets/blog/activeSubspace1.jpg
 ---

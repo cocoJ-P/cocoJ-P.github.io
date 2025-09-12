@@ -7,6 +7,7 @@ tags: [active-subspaces, dimensionality-reduction, ridge-function]
 categories: [machine-scientist, physics]
 code_diff: true
 author: Jiashun Pang
+thumbnail: assets/blog/activeSubspace1.jpg
 ---
 
 # Active Subspaces 1: Finding Important Directions in High Dimensions
