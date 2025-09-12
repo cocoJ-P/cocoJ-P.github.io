@@ -6,6 +6,6 @@ description: A survey of how Active Subspaces are applied across physics and eng
 tags: formatting diagrams
 categories: sample-posts
 code_diff: true
-thumbnail: assets/blog/activeSubspace1.png
+thumbnail: assets/img/blog/activeSubspace1.png
 
 ---
