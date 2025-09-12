@@ -6,6 +6,7 @@ description: "An accessible exploration of key mathematical ideas—ridge functi
 tags: [dimensionality-reduction, ridge-function, response-surface, active-subspace, learning]
 categories: [Mathematics, Physics, Machine-Scientist]
 author: Jiashun Pang
+code_diff: true
 toc: true
 featured: true
 mathjax: true

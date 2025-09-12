@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Dynamic Systems 101 Part 1 The Pendulum
+title: "Dynamic Systems 101 Part 1 The Pendulum"
 date: 2025-08-28
 description: This is a beginner-friendly series on learning dynamical systems.
 tags: 101 Learn
@@ -8,6 +8,7 @@ categories: Dynamic-system Physics
 author: Jiashun Pang
 toc: true
 mathjax: true
+code_diff: true
 chart:
   plotly: true
 ---
