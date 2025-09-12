@@ -72,48 +72,15 @@ ninja.data = [{
               handler: () => {
                 window.location.href = "/blog/";
               },
-            },{id: "post-",
+            },{id: "post-active-subspaces-1-finding-important-directions-in-high-dimensions",
         
-          title: "",
+          title: "Active Subspaces 1: Finding Important Directions in High Dimensions",
         
-        description: "",
+        description: "An intuitive introduction to Active Subspaces. We explain why high-dimensional models often hide lower-dimensional structures, connect the idea to ridge functions, and show simple toy examples that reveal how “important directions” emerge.",
         section: "Posts",
         handler: () => {
           
-            window.location.href = "/blog/2025/2025-09-09-ActiveSubspace1/";
-          
-        },
-      },{id: "post-",
-        
-          title: "",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/2024-09-18-ActiveSubspace4/";
-          
-        },
-      },{id: "post-",
-        
-          title: "",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/2024-09-15-ActiveSubspace3/";
-          
-        },
-      },{id: "post-",
-        
-          title: "",
-        
-        description: "",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2025/2024-09-10-ActiveSubspace2/";
+            window.location.href = "/blog/2025/ActiveSubspace1/";
           
         },
       },{id: "post-ridge-functions-response-surface-active-subspaces",
@@ -158,6 +125,39 @@ ninja.data = [{
         handler: () => {
           
             window.open("https://blog.google/technology/ai/google-gemini-update-flash-ai-assistant-io-2024/", "_blank");
+          
+        },
+      },{id: "post-active-subspaces-4-toward-nonlinear-manifold-learning",
+        
+          title: "Active Subspaces 4: Toward Nonlinear Manifold Learning",
+        
+        description: "Active Subspaces excel at finding linear combinations of variables, but many systems require nonlinear structure. We explore extensions such as generalized and deep active subspaces, and connect them with broader manifold learning and MosaicX-style atlas approaches.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/ActiveSubspace4/";
+          
+        },
+      },{id: "post-active-subspaces-3-from-fluid-dynamics-to-uncertainty-quantification",
+        
+          title: "Active Subspaces 3: From Fluid Dynamics to Uncertainty Quantification",
+        
+        description: "A survey of how Active Subspaces are applied across physics and engineering. We highlight case studies in fluid dynamics, aerospace design, Bayesian inference, and uncertainty quantification, and show how the method naturally connects to dimensional analysis.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/ActiveSubspace3/";
+          
+        },
+      },{id: "post-active-subspaces-2-gradients-covariances-and-eigenvectors",
+        
+          title: "Active Subspaces 2: Gradients, Covariances, and Eigenvectors",
+        
+        description: "A step-by-step dive into the mathematics of Active Subspaces. From gradient covariance matrices to eigen-decomposition, we show how to extract dominant directions, compare the method with PCA, and discuss practical issues like gradient computation.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2024/ActiveSubspace2/";
           
         },
       },{id: "post-a-post-with-code-diff",
