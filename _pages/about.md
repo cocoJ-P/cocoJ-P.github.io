@@ -27,7 +27,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-👋 Hi! I’m **Jiashun Pang**, exploring the intersection of **Mechanics, Mathematics, and AI4Science**.  
+👋 Hi! I’m **Jiashun Pang**(嘉顺 庞), exploring the intersection of **Mechanics, Mathematics, and AI4Science**.  
 I build frameworks like **MosaicX**, **OntoPilot**, and **Sessync** to push toward the vision of a *Machine Scientist*.  
 
 My work also involves the **Semantic Web and ontology-based knowledge representation**, where I design tools for **ontology modeling, semantic reasoning, and knowledge graph integration**. Through frameworks such as **OntoPilot**, I develop **trustworthy AI workflows** by combining OWL DL reasoning, LLM logic plugins, and consistency checking to enhance interpretability and reliability in scientific AI.  
