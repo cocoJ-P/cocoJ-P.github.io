@@ -149,17 +149,6 @@ ninja.data = [{
             window.location.href = "/blog/2024/ActiveSubspace3/";
           
         },
-      },{id: "post-active-subspaces-2-gradients-covariances-and-eigenvectors",
-        
-          title: "Active Subspaces 2: Gradients, Covariances, and Eigenvectors",
-        
-        description: "A step-by-step dive into the mathematics of Active Subspaces. From gradient covariance matrices to eigen-decomposition, we show how to extract dominant directions, compare the method with PCA, and discuss practical issues like gradient computation.",
-        section: "Posts",
-        handler: () => {
-          
-            window.location.href = "/blog/2024/ActiveSubspace2/";
-          
-        },
       },{id: "post-a-post-with-code-diff",
         
           title: "a post with code diff",
